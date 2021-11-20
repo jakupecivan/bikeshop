@@ -1,0 +1,123 @@
+#logo1{
+    font-family: 'Brush Script MT', cursive;
+}
+
+#logo2{
+    font-family: fantasy;
+}
+
+#logo3{
+    font-family: fantasy;
+    color: brown;
+}
+
+#logo4{
+    font-family:'LeagueMonoVariable';
+    color:darkblue;
+
+}
+#logo5{
+    font-family: 'Goudy Old Style';
+    color:darkgreen;
+}
+#logo6{
+    font-family: 'Rockwell';
+    color:teal;
+}
+#siderow{
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+
+
+
+meowCoinTitle{
+    padding-left: 10px;
+}
+
+.textonimage{
+    position:absolute;
+    width: 100%;
+    text-align:center;
+    top: 80%;
+    color:coral;
+    font-size: 40px;
+}
+
+#logo {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+body{
+    padding-bottom: 30px;
+}
+
+.jumbotron{
+    margin-bottom: 10px;
+    margin-top: 20px;
+
+}
+
+#map{
+    height: 400px;
+}
+
+input[type=text], select, textarea {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+    margin-top: 6px;
+    margin-bottom: 16px;
+    resize:both;
+}
+
+input[type=submit] {
+    background-color: #04AA6D;
+    color: white;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+input[type=submit]:hover {
+    background-color: #45a049;
+}
+;
+.container {
+    border-radius: 5px;
+    background-color: #f2f2f2;
+    padding: 20px;
+    text-align: left;
+    color:brown;
+}
+.p1{
+    text-align: center;
+    text-shadow: 0 0 3px #FF0000;
+    font-family:'Lucida Handwriting';
+    font-size: 150%;
+}
+#classicbmw{
+    font-family:'Brush Script MT', cursive;
+    font-size: 35px;
+    color:darkgoldenrod;
+}
+#chopper{
+    font-family:'Brush Script MT', cursive;
+    font-size: 35px;
+    color:darkgoldenrod;
+}
+#bobber{
+    font-family:'Brush Script MT', cursive;
+    font-size: 35px;
+    color:darkgoldenrod;
+}
+#speedbeast{
+    font-family:'Brush Script MT', cursive;
+    font-size: 35px;
+    color:darkgoldenrod;
+}

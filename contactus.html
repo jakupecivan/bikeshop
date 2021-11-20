@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+        <title>Bike Specialist - Contact Us</title>
+
+        <link href="style.css" rel="stylesheet" type="text/css">
+
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+
+
+        <!-- Bootstrap -->
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+
+
+    </head>
+    <body>
+        <div class="container-fluid">
+            <div class="jumbotron text-center">
+                <img class="inline" src="motor-icon.png"> <h1 id="logo1">Bike Specialist</h1>
+                <h2 id="logo2">BEST MOTORCYCLE SHOP IN TOWN</h2>
+            </div>
+
+            <div class="navbar navbar-default" style="background-color:#e3f2fd;">
+                <div class="container-fluid">
+                    <div class="navbar-header">
+                        <button type="button" class="navbar-toggle collapsed" data-toggle= "collapse" data-target="#theNav" aria-expanded="false">
+                            <span class="sr-only">Toggle Navigation</span>
+                            <span class="icon-bar"></span>
+                            <span class="icon-bar"></span>
+                            <span class="icon-bar"></span>
+                        </button>
+                        <a class="navbar-brand" href="index.html"><img class="inline" src="helmet.png"></a>
+                    </div>
+                    <div class="collapse navbar-collapse" id="theNav">
+                        <ul class="nav navbar-nav navbar-right">
+                            <li class="active"><a style="color:crimson" href="index.html" >Home</a></li>
+                            <li><a style="color:crimson" href="about.html">About Us</a></li>
+                            <li><a style="color:crimson" href="contactus.html">Contact Us</a></li>
+                            <li><a style="color:crimson" href="ridevideos.html">Ride Videos</a></li>
+                            <li>
+                                <a style="color:crimson" href="explore.html" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false" >Explore <span class="caret"></span></a>
+                                <ul class="dropdown-menu" style="background-color:burlywood">
+                                    <li><a style="color:darkcyan" href="explore.html#">Classics</a></li>
+                                    <li><a style="color:darkcyan" href="modern.html#">Modern</a></li>
+
+                                </ul>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+            <div class="container-fluid">
+                <div class="row text-center ">
+
+                    <h1 id="logo3">Get in Touch</h1>
+                </div>
+                <br>
+
+                <div class="row text-center ">
+                    <h2 id="logo2" >General Enquiry</h2><br>
+
+                    <div class="container">
+                        <form action="action_page.php">
+
+                            <label for="fname">First Name</label>
+                            <input type="text" id="fname" name="firstname" placeholder="Your name..">
+
+                            <label for="lname">Last Name</label>
+                            <input type="text" id="lname" name="lastname" placeholder="Your last name..">
+
+                            <label for="country">Country</label>
+                            <select id="country" name="country">
+                                <option value="ireland">Ireland</option>
+                                <option value="canada">Canada</option>
+                                <option value="usa">USA</option>
+                            </select>
+
+                            <label for="subject">Message</label>
+                            <textarea id="subject" name="subject" placeholder="Write something.." style="height:200px"></textarea>
+
+                            <input type="submit" value="Submit">
+
+                        </form>
+                    </div>
+
+                </div><br><br>
+
+
+
+            </div>
+            <br>
+            <div class="row text-left">
+                <h1 id="logo3">Get Directions</h1>
+                <div id="map">
+
+
+                </div>
+
+
+            </div>
+            <div class="row text-center" id="endingSection">
+                <h1 id="logo2"> Find Us Online</h1>
+                <div class="col-xs-4"><a href=""><i class="fa fa-twitter fa-5x " aria-hidden="true"></i></a></div>
+                <div class="col-xs-4"><a href=""><i class="fa fa-instagram fa-5x " aria-hidden="true"></i></a></div>
+                <div class="col-xs-4"><a href=""><i class="fa fa-youtube fa-5x " aria-hidden="true"></i></a></div>
+
+            </div><br><br>
+
+
+
+            <div>Icons made by <a href="" title="justicon">justicon</a> from <a href="https://www.flaticon.com/" title="Flaticon">www.flaticon.com</a></div>
+        </div>
+        <script>
+            // Initialize and add the map
+            function initMap() {
+                // The location of Uluru
+                const chickenking = { lat: 53.3498, lng:  -6.2603};
+                // The map, centered at Uluru
+                const map = new google.maps.Map(document.getElementById("map"), {
+                    zoom: 16,
+                    center: chickenking,
+                    scrollwheel: false
+                });
+                // The marker, positioned at Uluru
+                const marker = new google.maps.Marker({
+                    position: chickenking,
+                    map: map,
+                });
+            }
+        </script>
+
+        <script async
+                src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDW99GRrH3k9D8vZqB-3kB6QqkQLWonaDk&callback=initMap">
+        </script>
+
+        <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+        <!-- Include all compiled plugins (below), or include individual files as needed -->
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+    </body>
+</html>
